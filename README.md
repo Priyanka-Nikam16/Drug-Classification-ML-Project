@@ -1,5 +1,7 @@
 # Drug-Classification-ML-ProjectDrug Classification Project
-Overview
+
+**Overview**
+
 This project builds a machine learning classification model to predict which drug should be prescribed to a patient based on their medical features. Multiple algorithms were tested, and the best-performing model was selected for prediction.
 Problem Statement
 We aim to predict the Drug type prescribed to a patient using the following features:
@@ -14,13 +16,13 @@ Methodology
 1. Data Preprocessing
     - Checked dataset for null values and duplicates (none found).
     - Removed 8 outliers using the IQR method.
-    - Encoded categorical variables (Gender, BP, Cholesterol, Drug) using LabelEncoder.
+    - Encoded categorical variables (Gender, BP, Cholesterol) using LabelEncoder.
 
 2. Exploratory Data Analysis (EDA)
     - Univariate Analysis: Histograms for Cholesterol, BP, Na_to_K distribution.
     - Bivariate Analysis: Correlation heatmap showed:
-    - Strongest correlation between Na_to_K and Drug (0.6).
-    - Moderate correlation between BP and Drug (0.4).
+       - Strongest correlation between Na_to_K and Drug (0.6).
+       - Moderate correlation between BP and Drug (0.4).
 
 3. Model Building
     - Train-test split: 70/30.
